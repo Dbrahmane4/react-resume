@@ -1,13 +1,176 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+body{ 
+  background: hsl(180, 68%, 69%);
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 'name name name name name name'
+  'keyskills aboutme aboutme aboutme aboutme aboutme'
+  'keyskills education education education education education'
+  'certification experience experience experience experience experience'
+  'certification projects projects projects projects projects';
+  grid-gap: 30px;
+  padding: 10px;
+}
+.grid-container > div{
+  background-color: azure;
+}
+.item1{
+  grid-area: name;
+border-radius: 10px;}
+.item2{
+  grid-area: aboutme;
+border-radius: 10px;}
+.item3{
+  grid-area: keyskills;
+  border-radius: 10px;}
+.item4{
+  grid-area: education;
+border-radius: 10px;}
+.item5{
+  grid-area: experience;
+  border-radius: 10px;}
+.item6{
+  grid-area: certification;
+  border-radius: 10px;}
+.item7{
+  grid-area: projects;
+border-radius: 10px;}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header h1{
+  font-size: 70px;
+  padding: 15px;
+  font-weight: 500;
+}
+.header ul{
+  margin: 20px;
+}
+.header ul li{
+  padding: 5px;
+}
+.header ul li i{
+  padding-right: 10px;
+}
+ul {
+  list-style-type: none;
+}
+.sabout{
+  padding: 10px;
+}
+.sabout h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.sabout p{
+  font-size: 20px;
+ padding-left: 10px
+}
+.sedu{
+  padding: 10px;
+}
+.sedu h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.sedu .eduitems{
+  padding-left: 10px;
+}
+.sedu .eduitems h3{
+  font-weight: 600;
+}
+.sedu .eduitems h4{
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.sedu .eduitems h4 span{
+  font-size: 15px;
+}
+.sexper{
+  padding: 10px;
+}
+.sexper h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.sexper .exitems{
+  padding-left: 10px;
+}
+.sexper .exitems h3{
+  font-weight: 600;
+}
+.sexper .exitems h4{
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.sexper .exitems h3 span{
+  font-size: 15px;
+  font-weight: 500;
+}
+.sproject{
+  padding: 10px;
+}
+.sproject h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.sproject .projectitems{
+  padding-left: 10px;
+}
+.sproject .projectitems h3{
+  font-weight: 600;
+}
+.sproject .projectitems h4{
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.sskills{
+  padding: 10px;
+}
+.sskills h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.sskills .skills{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.sskills .skills h3{
+  font-weight: 500;
+  padding: 5px;
+}
+.scerti{
+  padding: 10px;
+}
+.scerti h2{
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+}
+.scerti .certi{
+  padding: 10px;
+}
+.scerti .certi h3{
+  font-weight: 500;
+  padding: 5px;
 }
